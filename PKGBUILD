@@ -14,7 +14,7 @@ pkgrel=2
 arch=('i686' 'x86_64')
 license=('custom:vim')
 url="http://www.vim.org"
-makedepends=('gpm' 'python2' 'ruby' 'libxt' 'desktop-file-utils' 'gtk2' 'lua')
+makedepends=('gpm' 'python2' 'libxt')  #'desktop-file-utils' 'gtk2' 'lua' 'ruby')
 source=("ftp://ftp.archlinux.org/other/vim/vim-${pkgver}.tar.xz"
         "ftp://ftp.archlinux.org/other/vim/vim-${pkgver}.tar.xz.sig"
         'vimrc'
@@ -83,8 +83,8 @@ build() {
     --enable-cscope \
     --disable-netbeans \
     --enable-perlinterp \
-    --disable-pythoninterp \
-    --disable-python3interp \
+    --enable-pythoninterp \
+    --enable-python3interp \
     --disable-rubyinterp \
     --disable-luainterp
 
