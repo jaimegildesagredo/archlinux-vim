@@ -1,0 +1,4 @@
+.*.sw[po]
+*vim-*tar.xz*
+pkg/
+src/
