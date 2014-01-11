@@ -6,21 +6,21 @@
 pkgbase=vim
 pkgname=('vim' 'gvim' 'vim-runtime')
 _topver=7.4
-_patchlevel=16
-__hgrev=d17ef148ada4
+_patchlevel=135
+__hgrev=de28b1568fc2
 _versiondir="vim${_topver//./}"
 pkgver=${_topver}.${_patchlevel}
-pkgrel=2
+pkgrel=1
 arch=('i686' 'x86_64')
 license=('custom:vim')
 url="http://www.vim.org"
-makedepends=('gpm' 'python2' 'libxt')  #'desktop-file-utils' 'gtk2' 'lua' 'ruby')
+makedepends=('gpm' 'python2' 'libxt')
 source=("ftp://ftp.archlinux.org/other/vim/vim-${pkgver}.tar.xz"
         "ftp://ftp.archlinux.org/other/vim/vim-${pkgver}.tar.xz.sig"
         'vimrc'
         'archlinux.vim'
         'gvim.desktop')
-md5sums=('733cce44a08ea953ad0e1f9d574670e0'
+md5sums=('be672ce2a929503412378c998fc3dc27'
          'SKIP'
          'b9d4dcb9d3ee2e151dc4be1e94934f6a'
          '10353a61aadc3f276692d0e17db1478e'
